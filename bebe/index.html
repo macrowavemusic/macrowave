@@ -51,16 +51,17 @@
             $(this).hide();
             $('#plugin-name').show();
             $('#coucou').show();
-          }
-        });
-        $('#demo2').wScratchPad({
-          bg: './images/reponse.png',
-          fg: './images/coeur.jpg',
-          'cursor': 'url("./cursors/coin.png") 5 5, default',
-          scratchMove: function (e, percent) {
-            if (percent > 70) {
-              this.clear();
-            }
+
+            $('#demo2').wScratchPad({
+              bg: './images/reponse.png',
+              fg: './images/coeur.jpg',
+              'cursor': 'url("./cursors/coin.png") 5 5, default',
+              scratchMove: function (e, percent) {
+                if (percent > 70) {
+                  this.clear();
+                }
+              }
+            });
           }
         });
       </script>
